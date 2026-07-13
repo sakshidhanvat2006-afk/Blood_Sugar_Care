@@ -1,0 +1,117 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* NAVBAR */
+.navbar {
+    background: #222;
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+h3{
+   color:purple;
+}
+
+/* CARDS */
+.card {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    color: #333;
+    width: 90%;
+    max-width: 1000px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* CARD IMAGES */
+.card img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* CARD TEXT */
+.text {
+    width: 60%;
+    padding-left: 20px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: purple;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkviolet;
+    transform: scale(1.05);
+}
+
+/* CARD COLORS */
+.blue { background: lightblue; }
+.green { background: lightgreen; }
+.pink { background: #ffe0e6; }
+.orange { background: #ffe7d6; }
+
+/* ARTICLE LINKS */
+.article-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card img {
+        width: 90%;
+        height: auto;
+    }
+
+    .text {
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+}
+
